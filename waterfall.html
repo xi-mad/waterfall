@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<header>
+    <title>waterfall</title>
+</header>
+<body>
+    <ul class="container">
+        <li class="card --red"></li>
+        <li class="card --orange"></li>
+        <li class="card --yellow"></li>
+        <li class="card --green"></li>
+        <li class="card --dark"></li>
+        <li class="card --white"></li>
+        <li class="card --gray"></li>
+        <li class="card --orange"></li>
+        <li class="card --dark-gray"></li>
+        <li class="card --skin"></li>
+        <li class="card --brown"></li>
+        <li class="card --green"></li>
+        <li class="card --dark"></li>
+        <li class="card --white"></li>
+        <li class="card --gray"></li>
+        <li class="card --yellow"></li>
+        <li class="card --dark-gray"></li>
+        <li class="card --skin"></li>
+        <li class="card --brown"></li>
+        <li class="card --red"></li>
+      </ul>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            list-style: none;
+            column-gap: 0;
+            padding: 0;
+            column-count: 5;
+        }
+        .card {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            break-inside: avoid;
+        }
+        .--red {
+            background: #E86F51;
+            height: 350px;
+        }
+        .--orange {
+            background: #F5A462;
+            height: 200px;
+        }
+        .--yellow {
+            background: #E8C468;
+            height: 400px;
+        }
+        .--green {
+            background: #2B9E91;
+            height: 350px;
+        }
+        .--dark {
+            background: #274754;
+            height: 500px;
+        }
+        .--white {
+            background: #EADFC9;
+            height: 250px;
+        }
+        .--gray {
+            background: #BFDBCF;
+        }
+        .--dark-gray {
+            background: #93ADA4;
+            height: 300px;
+        }
+        .--skin {
+            background: #F3A14B;
+            height: 350px;
+        }
+        .--brown {
+            background: #DC7646;
+            height: 400px;
+        }
+        @media (min-width: 320px) and (max-width: 759.5px) {
+        .container {
+            column-count: 2;
+        }
+        }
+        @media (min-width: 760px) and (max-width: 979.5px) {
+        .container {
+            column-count: 3;
+        }
+        }
+        @media (min-width: 980px) and (max-width: 1023.5px) {
+        .container {
+            column-count: 4;
+        }
+        }
+        @media (min-width: 1024px) {
+        .container {
+            column-count: 5;
+        }
+        }
+    </style>
+</body>
